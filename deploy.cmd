@@ -17,7 +17,7 @@ IF %ERRORLEVEL% NEQ 0 (
 
 :: Setup
 :: -----
-
+echo Handling node.js setup.
 setlocal enabledelayedexpansion
 
 SET ARTIFACTS=%~dp0%..\artifacts
@@ -51,7 +51,7 @@ goto Deployment
 
 :: Utility Functions
 :: -----------------
-
+echo Handling node.js Utilities.
 :SelectNodeVersion
 
 IF DEFINED KUDU_SELECT_NODE_VERSION_CMD (
